@@ -1,0 +1,21 @@
+<div class="col-md-8 offset-md-2">
+  <div class="card text-center">
+    <div class="card-header">
+      <a href="{{link.link}}}"  target="_blank">
+        {{link.title}}
+      </a>
+    </div>
+    <div class="card-body">
+      Points: 
+      <h3 class="display-4">{{link.votes}}</h3>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="link.voteUp()">
+          Up
+        </button>
+        <button class="btn btn-danger" (click)="link.voteDown()">
+          Down
+        </button>
+    </div>
+  </div>
+</div>
